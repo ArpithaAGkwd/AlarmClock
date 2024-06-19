@@ -1,0 +1,142 @@
+/*  GLobal Styles */
+body {
+    font-family: sans-serif;
+    display: block;
+    max-height: none;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(52, 24, 66, 1) 48%, rgba(73, 33, 97, 1) 100%);
+}
+
+.clock {
+    font-size: 24px;
+}
+
+.date {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: oblique;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child) {
+    position: relative;
+    max-width: 0 6px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.time span:last-child {
+    background: #2E94E3;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+/* End GLobal Styles */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.clock-container {
+    padding: 2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f2f2f2f2;
+}
+
+.current-time {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+
+}
+
+.set-alarm-container {
+    width: 100%;
+    margin-top: 1rem;
+    ;
+}
+
+.set-alarm-container .set-alarm-container-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+.alarm {
+    justify-content: center;
+    gap: 12rem;
+    border-radius: 30px;
+    padding: 0.1rem 1rem;
+    align-items: center;
+}
+
+.time {
+    color: #0e141b;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.input-group-text {
+    width: 55%;
+    background-color: #a18db7;
+    color: black;
+}
+
+.input-group {
+    width: 30% !important;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.form-inner-container {
+    display: flex;
+    gap: 5px;
+    margin-top: 1.5rem;
+}
+
+.form-button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.alarms-container {
+    margin-top: 1rem;
+}
+
+/* style of devices of screen size less than 768px */
+
+@media only screen and (min-width: 600px) {
+
+    /* adding padding to container */
+    .main-container {
+        padding-block: 2rem;
+    }
+
+    .clock-container {
+        justify-content: center;
+        border-radius: 10px;
+        width: 43rem;
+        min-height: auto;
+    }
+}
